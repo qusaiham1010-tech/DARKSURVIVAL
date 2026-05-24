@@ -21,8 +21,8 @@ jobs:
           distribution: temurin
           java-version: 17
 
-      - name: Grant Gradle Permission
-        run: chmod +x gradlew
+      - name: Give Permission
+        run: chmod +x gradlew || true
 
       - name: Build APK
         run: ./gradlew assembleDebug
